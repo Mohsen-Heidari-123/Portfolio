@@ -1,0 +1,146 @@
+main{
+    
+   
+  color: #ffffff;
+  padding: 80px 40px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.contact-inner {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(47, 46, 46);
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgb(255, 254, 254);
+  color: white;
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info hr {
+  border: none;
+  height: 1px;
+  background-color: #f9fbfb;
+  color: white;
+  margin: 10px 0;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  
+}
+.contact-info a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact-form-box {
+  flex: 1;
+  min-width: 300px;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #00adb5;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #111;
+  transition: border-color 0.3s;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+  border-color: #00fff7;
+  outline: none;
+}
+
+#contactForm button {
+  background-color: #00adb5;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#contactForm button:hover {
+  background-color: #00fff7;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  #slide4 {
+    padding: 5px; /* Adjusted padding for smaller screens */
+  }
+
+  .contact-inner {
+    flex-direction: column;
+    gap: 5px; /* Increased gap for better spacing */
+    text-align: center;
+  }
+
+  .contact-title {
+    font-size: 1rem; /* Further reduced size for smaller screens */
+  }
+
+  .contact-description {
+    font-size: 0.8rem; /* Further reduced size for smaller screens */
+    margin-bottom: 0.8rem;
+  }
+
+  .contact-info h3 {
+    font-size: 0.9rem;
+  }
+  .contact-info p {
+    font-size: 0.8rem; /* Further reduced size for smaller screens */
+  }
+
+  #contactForm input,
+  #contactForm textarea {
+    font-size: 0.8rem; /* Further reduced size for smaller screens */
+  }
+
+  #contactForm button {
+    font-size: 0.8rem; /* Further reduced size for smaller screens */
+  }
+}

@@ -1,0 +1,73 @@
+.hero {
+  display: grid;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-size: 2em;
+  background-image: url(https://images.hdqwalls.com/download/forest-mountains-3v-3840x2400.jpg);
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.title {
+  justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 13px;
+}
+.title p {
+  font-size: medium;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.card-container {
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+  gap: 100px;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.card-container img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid orangered;
+  border-radius: 5px;
+}
+
+.navbar :hover {
+  color: orangered;
+}
+
+@media only screen and (max-width: 480px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+
+    gap: 50px;
+  }
+  .title {
+    display: relative;
+    font-size: small;
+  }
+  .card-container img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+.title{
+  font-size: medium;
+}
+
+}
