@@ -99,6 +99,12 @@ section.card {
   transition: 0.3s ease;
   cursor: pointer;
 }
+.btn-1 a{
+  color: white;
+}
+.btn-2 a{
+  color: white;
+}
 /* this style is just for card section in medium size screen perfektly*/
 
 @media only screen and (max-width: 1015px) {
