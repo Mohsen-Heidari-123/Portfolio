@@ -1,17 +1,14 @@
 .Project {
   color: white;
   justify-self: center;
-
-    
- 
 }
 .Project h1 {
   justify-self: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-.Project p{
-    justify-content: center;
-    font-size: small;
+.Project p {
+  justify-content: center;
+  font-size: small;
 }
 .Project-image {
   display: grid;
@@ -23,14 +20,76 @@
   padding: 20px;
 }
 
-.Project-image img {
+.Project-image div {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid orangered;
+  color: white;
+  justify-items: center;
+  background-size: cover;
+}
+.Project-image div h4,
+.Project-image div p {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  color: orangered;
+}
+.Project-image div p {
+  color: black;
+  margin-top: 45px;
+}
+.Project-image div input {
+  align-self: center;
+  display: block;
+  background-color: darkblue;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  font-size: medium;
+}
+.Project-image div:hover {
+  width: 105%;
+  height: 210px;
+
+  margin-left: -10px;
+  margin-top: -10px;
 }
 
+
+.image-1 {
+  background-image: url("../assets/001-half-fold-brochure-editorial-free-identity-corporate-stationery-branding-graphic-design-psd-photoshop-mockup-resource-photography-logotype-high-resolution-stunning.jpg");
+}
+.image-2 {
+  background-image: url("../assets/001-invitation-business-card-pen-identity-corporate-stationery-branding-graphic-design-psd-photoshop-mockup-resource-photography-logotype-high-resoluti.jpg");
+}
+.image-3 {
+  background-image: url("../assets/001-Macbook-air-iMac-Screens-identity-corporate-stationery-branding-graphic-design-psd-photoshop-mockup-resource-photography-logotype-high-resolutio.jpg");
+}
+.image-4 {
+  background-image: url("../assets/001-notebook-cover-pen-brand-identity-corporate-stationery-branding-graphic-design-psd-photoshop-mockup-resource-photography-logotype-high-resolution-stunn.jpg");
+}
+.image-5 {
+  background-image: url("../assets/hardcover-book-slide-box-editorial-design-psd-mockup_preview.jpg");
+}
+.image-6 {
+  background-image: url("../assets/ipad-pro-on-a-mirror-base-screen-showcase-psd-mockup_preview.jpg");
+}
+.image-6 {
+  background-image: url("../assets/iphone-ipad-and-macbook-showcase-screens-psd-mockup_preview.jpg");
+}
+.image-7 {
+  background-image: url("../assets/iphone-pro-scene-showcase-screen-psd-mockup_preview.jpg");
+}
+.image-8 {
+  background-image: url("../assets/gravity-pile-of-business-cards-identity-psd-mockup-1_preview.jpg");
+}
+.image-9 {
+  background-image: url("../assets/ipad-pro-on-a-mirror-base-screen-showcase-psd-mockup_preview.jpg");
+}
 
 @media (max-width: 768px) {
   .Project-image {
